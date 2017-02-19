@@ -2,18 +2,17 @@
  * Created by Andrés Báez on 14/2/2017.
  */
 
-
 exports.TeamCreator = (function () {
 
-    var players = [];
+    this.players = [];
 
     function setPlayers(players){
-        players = players;
+        this.players = players;
     }
 
     function createTeams() {
 
-        var input = players;
+        var input = this.players;
 
         var teams = [],
             i = 0,
