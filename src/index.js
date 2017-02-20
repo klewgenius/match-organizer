@@ -7,7 +7,7 @@ exports.TeamCreator = (function () {
     this.players = [];
 
     function setPlayers(players){
-        this.players = players;
+        this.players = Object.assign([], players);
     }
 
     function createTeams() {
@@ -22,7 +22,7 @@ exports.TeamCreator = (function () {
         scores["A"]=0; scores["B"]=0;
         teams["A"]=[]; teams["B"]=[];
 
-        input.sort((a, b) => b.score - a.score);
+        input.sort(function(a, b){ return b.score - a.score;});
 
         var nextPlayer;
         var teamForNextPlayer;
