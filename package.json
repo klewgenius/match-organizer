@@ -1,6 +1,6 @@
 {
   "name": "team-creator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Given a list of players, this library will create 2 even teams",
   "engines": {
     "node": "5.9.1"
